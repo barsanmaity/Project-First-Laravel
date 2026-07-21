@@ -11,7 +11,7 @@
     <form action="" method="POST">
 
        <label>Employee ID: </label>
-       <input type = "text" name="emp_ID">
+       <input type = "text" id ="name" name="emp_ID">
        <br>
        <label>Employee Name: </label>
        <input type = "text" id = "name" name = "emp_name">
