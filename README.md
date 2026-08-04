@@ -87,3 +87,10 @@ php artisan migrate:status
 
 to iclude one page in another page
 @include('your blade file name')
+
+to clear route,cach,configaration
+php artisan optimize:clear
+
+middleware is bridge between route and controller..use to token valiadtion etc.
+make middleware 
+ php artisan make:middleware HitMiddleware.php 
