@@ -22,11 +22,11 @@ class EmployeeController extends Controller
         'emp_email' =>'required|email|unique:users, email',
         'emp_password' =>'required|min:8|confirmed',
     ]);
-    // User::create([
-    //     'name' => $resquest->name,
-    //     'email' =>$request->email,
-    //     'password' =>Hash::make($request->password),
-    // ]);
+    User::create([
+        'name' => $resquest->name,
+        'email' =>$request->email,
+        'password' =>Hash::make($request->password),
+    ]);
 
     return redirect('/login')->with('success','Registrartion successfull');
    }
